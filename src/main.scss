@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500&family=Montserrat:wght@500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500&family=Montserrat:wght@500;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Spartan:wght@300;400;500&display=swap');
 
 *{
     padding: 0;
@@ -9,13 +11,13 @@
 
     :root {
         --PrimaryColor: hsl(255, 50%, 48%);
-        --SecondaryColor: hsl(180, 17%, 95%);
+        --SecondaryColor: hsl(0, 6%, 85%);
         --ColorOne: hsl(15, 74%, 70%);
         --colorTwo: hsl(28, 100%, 82%);
         --HoverColor: hsl(255, 56%, 59%);
         --WhiteColor: hsl(0, 0%, 100%);
         --BlackColor: hsl(0, 0%, 12%);
-        --textColor: hsl(240, 1%, 48%);
+        --textColor: hsl(240, 2%, 30%);
         --borderColor: hsl(0, 0%, 83%);
         --whiteColorDeam: hsl(0, 0%, 93%);
         --greyBg: hsl(0, 0%, 96%);
@@ -172,7 +174,7 @@ h2{
 
                 .menu{
                     flex-direction: column;
-                    gab: .5rem;
+                    gap: .5rem;
                     text-align: center;
 
                     .listItem{
@@ -222,6 +224,7 @@ h2{
 .home{
     padding-top: 10rem;
     text-align: center;
+    gap: 2rem;
     flex-direction: column;
 
     .mainText{
@@ -262,7 +265,7 @@ h2{
         padding: 1.5rem;
         border: 2px solid var(--greyBg);
         border-radius: 16px;
-        margin-bottom: 2rem;
+        row-gap: 2rem;
 
         .btns{
             background: var(--SecondaryColor);
@@ -298,7 +301,7 @@ h2{
             width: 100%;
             justify-content: center;
             flex-direction: column;
-            padding-bottom: 1.5rem;
+            gap: 1.5rem;
 
             .singleInput{
                 .iconDiv{
@@ -306,7 +309,7 @@ h2{
                     border-radius: 3rem;
                     background: var(--SecondaryColor);
                     margin-right: 1rem;
-                    // margin-bottom: 1rem;
+
 
                     .icon{
                         color: var(--BlackColor);
@@ -340,4 +343,113 @@ h2{
         }
        
     }
+}
+
+//Support section styling*******************************
+.support{
+    .sectionContainer{
+        .tittlesDiv{
+            text-align: center;
+            small{
+                letter-spacing: .8rem;
+                text-transform: uppercase;
+                font-size: 13px;
+                color: var(--BlackColor);
+                line-height: 1.5rem;
+            }
+        }
+        .infoDiv{
+            margin-top: 2rem;
+            gap: 1.5rem;
+
+            .textDiv{
+                gap: 1.5rem;
+
+                .singleInfo{
+                    .number{
+                        background: var(--PrimaryColor);
+                        padding: 5px 12px;
+                        width: 40px;
+                        border-radius: 3rem;
+                        text-align: center;
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: var(--WhiteColor);
+                    }
+                    .colorOne{
+                        background: var(--ColorOne);
+                    }
+                    .colorTwo{
+                        background: var(--colorTwo);
+                    }
+                }
+            }
+
+            imgDiv{
+                margin: 100%;
+                img{
+                    width: 100%;
+                    max-width: 420px;
+                }
+            }
+        }
+    }
+}
+
+//Info section styling*******************************
+.info{
+    background: var(--SecondaryColor);
+
+    .infoContainer{
+      .tittleDiv{
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+        justify-content: space-between;
+      }
+
+      .cardsDiv{
+        gap: 1.5rem;
+        margin-top: 3rem;
+
+        .singleCard{
+            background: var(--WhiteColor);
+            padding: 3rem 2rem;
+            border-radius: 10rem;
+            gap: 1rem;
+            text-align: center;
+            margin: auto;
+            height: 320px;
+            width: 90%;
+            min-width: 250px;
+
+            .iconDiv{
+                justify-content: center;
+                margin: auto;
+                background: var(--PrimaryColor);
+                width: max-content;
+                height: 55px;
+                padding: 1rem;
+                border-radius: 3rem;
+
+                .icon{
+                    color: var(--WhiteColor);
+                }
+            }
+
+            .cardTitle{
+                color: var(--BlackColor);
+                font-weight: 700;
+            }
+
+            .colorOne{
+                background: var(--ColorOne);
+            }
+            .colorTwo{
+                background: var(--colorTwo);
+            }
+        }
+      }
+    }
+
 }
